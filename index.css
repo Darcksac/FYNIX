@@ -58,15 +58,18 @@
 }
 
 #soft-medida{
-    background-color: #343a40;
+    background-color: #2eacb5;
     color: white;
   
 }
 
 /* login */
 
-#container_login{
-    height: 85vh;
+.card-img-top {
+    width: auto; /* Mantiene el tamaño original de la imagen */
+    max-width: 100%; /* Evita que la imagen sea más grande que el contenedor */
+    height: 150px; /* Ajusta la altura a lo que necesites */
+    object-fit: contain; /* La imagen se ajusta sin recortar nada */
+    display: block; /* Evita márgenes inesperados */
+    margin: 0 auto; /* Centra la imagen */
 }
-
-/* / login */
