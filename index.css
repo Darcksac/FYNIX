@@ -1,15 +1,25 @@
 .text-platzi{
-    color: #1993e2 !important;
+    color: #19d1e2 !important;
 }
 
 .btn-platzi{
-    background-color:#1993e2;
+    background: linear-gradient(90deg,#293035,#273b47 50%,#19d1e2);
     color: white;
 }
 
 .btn-platzi:hover{
-    background-color: #1474b3;
+    background: linear-gradient(90deg,#548db5,#65a5cd 50%,#19d1e2);
 }
+
+.btn-primary{
+    background: linear-gradient(90deg,#293035,#273b47 50%,#19d1e2);
+    color: white;
+}
+
+.btn-primary:hover{
+    background: linear-gradient(90deg,#548db5,#65a5cd 50%,#19d1e2);
+}
+
 
 #header img{
     
@@ -18,7 +28,7 @@
 }
 
 #footer{
-    background: linear-gradient(90deg,#1c3643,#273b47 50%,#1e5372);
+    background: linear-gradient(90deg,#293035,#273b47 50%,#19d1e2);
 }
 
 #footer a{
@@ -42,7 +52,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.333);
     color: white;
 
 }
@@ -63,13 +73,127 @@
   
 }
 
-/* login */
 
 .card-img-top {
-    width: auto; /* Mantiene el tamaño original de la imagen */
-    max-width: 100%; /* Evita que la imagen sea más grande que el contenedor */
-    height: 150px; /* Ajusta la altura a lo que necesites */
-    object-fit: contain; /* La imagen se ajusta sin recortar nada */
-    display: block; /* Evita márgenes inesperados */
-    margin: 0 auto; /* Centra la imagen */
+    width: auto; 
+    max-width: 100%; 
+    height: 150px; 
+    object-fit: contain; 
+    display: block; 
+    margin: 0 auto; 
 }
+
+div {
+padding: 10px;
+border-radius: 8px;
+}
+
+.modal-content {
+border-radius: 12px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+background: #ffffff;
+}
+
+.modal-header {
+background: #293035;
+color: white;
+border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+}
+
+/* Cuerpo del modal */
+.modal-body {
+padding: 20px;
+font-size: 16px;
+color: #333;
+}
+
+/* Estilo para listas dentro de los modales */
+.modal-body ul {
+padding-left: 20px;
+}
+
+.modal-body ul li {
+margin-bottom: 10px;
+font-weight: 500;
+}
+
+/* Pie de página del modal */
+.modal-footer {
+background: #f1f1f1;
+border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+}
+
+/* Botones del modal */
+.modal-footer .btn {
+border-radius: 6px;
+padding: 10px 20px;
+}
+
+/* Botón de cerrar */
+.modal-header .close {
+color: white;
+font-size: 24px;
+opacity: 0.8;
+}
+
+.modal-header .close:hover {
+opacity: 1;
+}
+
+/* Animación para el modal */
+@keyframes fadeIn {
+from {
+opacity: 0;
+transform: translateY(-10px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.modal.fade .modal-dialog {
+animation: fadeIn 0.3s ease-in-out;
+}
+/* Estilos generales para los botones */
+.modal-footer .btn {
+border-radius: 8px;
+padding: 12px 20px;
+font-size: 16px;
+font-weight: 600;
+transition: all 0.3s ease-in-out;
+}
+
+/* Botón secundario (Cerrar) */
+.modal-footer .btn-secondary {
+background-color: #293035;
+color: white;
+border: none;
+}
+
+.modal-footer .btn-secondary:hover {
+background-color: #313539;
+transform: scale(1.05);
+}
+
+/* Botón primario (Trabajemos juntos) */
+.modal-footer .btn-primary {
+background: linear-gradient(135deg, #293035, #19d1e2);
+color: white;
+border: none;
+}
+
+.modal-footer .btn-primary:hover {
+background: linear-gradient(135deg, #94b0be, #649fe3);
+transform: scale(1.05);
+box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+}
+
+/* Efecto de clic en los botones */
+.modal-footer .btn:active {
+transform: scale(0.95);
+}
+
+
